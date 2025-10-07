@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Payment Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <div class="card text-center">
+      <div class="card-header text-start">
+        <strong>Payment for Example</strong>
+      </div>
+
+      <!-- Card Body -->
+      <div class="card-body">
+        <form class="needs-validation" novalidate>
+          <!-- Fila 1: First Name y Last Name -->
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label"
+                >First name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label"
+                >Last name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom02"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+          </div>
+          <!-- Fila 2: City, State, Zip -->
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">City</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom03"
+                required
+              />
+              <div class="invalid-feedback">Please provide a valid city.</div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">State</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>California</option>
+                <option>Texas</option>
+                <option>Florida</option>
+              </select>
+              <div class="invalid-feedback">Please select a valid state.</div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Zip</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom05"
+                required
+              />
+              <div class="invalid-feedback">Please provide a valid zip.</div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Botones Cancel y Send -->
+      <div class="card-footer">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a href="#" class="btn btn-secondary">Cancel</a>
+          <a href="#" class="btn btn-primary">Send</a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
